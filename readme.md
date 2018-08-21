@@ -1,4 +1,4 @@
-#C++ Introduction to Pointers
+# C++ Introduction to Pointers
 
 Pointers is what separates C/C++ from other languages. These 
 are incredibly powerful as they allow programs to access 
@@ -8,7 +8,7 @@ memory directly and manipulate it.
 * pointers to arrays & heap based arrays 
 * advance memory management 
 
-###Process
+### Process
 * When a program is started, a process is created
 * Virtual address space that provides an enviroment to for the executable to run 
 * Size depends on the platform 
@@ -17,7 +17,7 @@ memory directly and manipulate it.
     
 ![Alt text]( img/virtual_address_space.png "Virtual Address Space")
 
-###Pointer 
+### Pointer
 * A pointer is like an address type variable, it holds an address instead of a data value
 * Systax is different than a variable 
     *   int *p [ &\<variable> | dinamyc_memory ]
@@ -30,7 +30,7 @@ A pointer can hold adress of :
 
 ![Alt text]( img/pointer_in_address_space.png "Pointer in Address Space")
 
-###Pointer Applications 
+### Pointer Applications
 1. Avoid copy 
 2. Manipulate data indirectly 
 3. Hardware access
@@ -40,7 +40,7 @@ A pointer can hold adress of :
 7. Other data structures, that without pointer, it would be imposible to implement them
 
 
-##Static Arrays 
+## Static Arrays
 - Fixed-size collection of elements of same type 
 - Size is fixed at compile time & cannnot grow 
     - except in C99
@@ -51,7 +51,7 @@ A pointer can hold adress of :
 - Allows a collective name for a group of elements 
     - useful for large data sets
 
-###Array as Function Argument
+### Array as Function Argument
 - C/C++ arrays do not store size
 - Passing arrays to functions requires size to be passed as well
 - No automatic bounds checking 
@@ -60,7 +60,7 @@ A pointer can hold adress of :
     - intruduced in c++11
     - safer and easier to use
 
-###Array as a Reference Argument
+### Array as a Reference Argument
 - You can create a reference to an array and access to its elements by its reference
     - int (&ref)[5] = arra;  
 - Safe way to pass ans array to a function 
@@ -70,17 +70,17 @@ A pointer can hold adress of :
     - \<typename T, int size> std::begin(T(&ref)[size])
     - \<typename T, int size> std::end(T(&ref)[size])
  
-###STL array container
+### STL array container
 - Performance is the same as static array 
 - It includes build in function 
     - std::array\<int, size> arr;
     - int arr_size = arr.size();
     
-###Arrays on Heap
+### Arrays on Heap
 - Arrays that are stored in the Heap instead of the Stack 
     - int *p = new int[5];
 
-##Multidimensional Arrays 
+## Multidimensional Arrays
 - a multidimensional array is an array of arrays
 - the data can be represented in a tabular form 
 - N-dimensional array can be declared as 
@@ -90,7 +90,7 @@ A pointer can hold adress of :
  
   ![Alt text]( img/multidimensional_array.png "Multidimensional Array")  
 
-###Multidimensiona Arrays on Heap
+### Multidimensiona Arrays on Heap
 - Can be created on the heap, we used it when we don not know the array size at compilation time
 - Memory allocation happens on runtime
 - Implemented as array of arrays 
@@ -102,5 +102,5 @@ A pointer can hold adress of :
 
  ![Alt text]( img/multidimensional_array_onHeap.png "Multidimensional Array on Heap")
  
-##Dynamic array
+## Dynamic array
 - You dont have to deal with memory allocation and dellocation manually 

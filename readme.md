@@ -22,7 +22,7 @@ memory directly and manipulate it.
 * Systax is different than a variable 
     *   int *p [ &\<variable> | dinamyc_memory ]
     
-A pointer can hold adress of :
+A pointer can hold address of :
 * variable 
 * pointer
 * object
